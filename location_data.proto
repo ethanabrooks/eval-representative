@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package work_project;
+
+message gLatLng {
+  optional int32 latE7 = 1;
+  optional int32 lngE7 = 2;
+}
+
+message LocationData {
+  optional int32 timestamp = 1;
+  optional gLatLng latlng = 2;
+  optional bool is_optimal = 3;
+  optional int32 index = 4;
+}
